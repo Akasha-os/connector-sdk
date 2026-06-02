@@ -1,4 +1,4 @@
-# @akasha/connector-sdk
+# @akasha-os/connector-sdk
 
 Build connectors for [Akasha](https://github.com/Akasha-os/akasha) — the self-hosted second brain.
 
@@ -9,7 +9,7 @@ A connector is a data source that feeds into Akasha's knowledge graph. This SDK 
 ## Install
 
 ```bash
-npm install @akasha/connector-sdk
+npm install @akasha-os/connector-sdk
 ```
 
 ---
@@ -17,7 +17,7 @@ npm install @akasha/connector-sdk
 ## Quickstart
 
 ```typescript
-import { WebhookConnector, NormalizedEvent } from '@akasha/connector-sdk';
+import { WebhookConnector, NormalizedEvent } from '@akasha-os/connector-sdk';
 import { z } from 'zod';
 
 const ConfigSchema = z.object({
@@ -61,7 +61,7 @@ export class NotionConnector extends WebhookConnector {
 
 ## Publishing
 
-Name your package `@akasha/connector-[name]` and publish to npm:
+Name your package `@akasha-os/connector-[name]` and publish to npm:
 
 ```bash
 npm publish --access public
